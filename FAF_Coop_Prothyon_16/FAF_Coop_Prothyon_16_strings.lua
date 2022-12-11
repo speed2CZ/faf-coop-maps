@@ -55,22 +55,34 @@
 
 -- Player Win / Actor: Gyle / Update 28/09/2015 / VO TODO
 PlayerWin = {
-  {text = '[Gyle]: Congratulations commander, because of you we were able to retreat with minimal losses.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Congratulations commander, because of you we were able to retreat with minimal losses.',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_PlayerWin.sfd', bank = 'Prothyon16_VO', cue = 'PlayerWin', faction = 'UEF'
+    },
 }
 
 -- Player Dies / Actor: Gyle / Update / VO TODO
 PlayerDies = {
-  {text = '[Gyle]:', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]:Commander come in, commander!',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_PlayerDies.sfd', bank = 'Prothyon16_VO', cue = 'PlayerDies', faction = 'UEF'
+    },
 }
 
 -- Player Lose To AI / Actor: Gyle / Update 22/05/2015 / VO Ready
 PlayerLoseToAI = {
-  {text = '[Gyle]: Commander, your ACU has been brought to critical health and can no longer participate in combat. You have been defeated!', vid = 'Pro_16_PlayerLose1.sfd', bank = 'Prothyon16_VO', cue = '26Playerlose', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander, your ACU has been brought to critical health and can no longer participate in combat. You have been defeated!',
+        vid = 'Pro_16_PlayerLose1.sfd', bank = 'Prothyon16_VO', cue = '26Playerlose', faction = 'UEF'
+    },
 }
 
 -- sACU Die / Actor: Gyle / Update 28/09/2015 / VO TODO
 sACUDie = {
-  {text = '[Gyle]: We have lost contact with Morax, the operation has failed.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: We have lost contact with Morax, abort the operation.',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5_Morax_Death.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_Death', faction = 'UEF'
+    },
 }
 
 
@@ -84,71 +96,110 @@ sACUDie = {
 
 -- Intro Sequence 1 / Actor: Gyle / Update 30/07/2015 / VO not ready
 intro1 = {
-  {text = '[Gyle]: Welcome commander – My name is Gyle and I’ll be your intel officer for the forthcoming scenario. In this mission you will be giving a demonstration to our newest recruits by fighting against a training AI. Your first objective will be to destroy this outpost. ', vid = 'Pro_16_intro1.sfd', bank = 'Prothyon16_VO', cue = '1intro1', faction = 'UEF'},
+    {
+        text = '[Gyle]: Welcome commander – My name is Gyle and I’ll be your intel officer for the forthcoming scenario. In this mission you will be giving a demonstration to our newest recruits by fighting against a training AI. Your first objective will be to destroy this outpost. ',
+        vid = 'Pro_16_intro1.sfd', bank = 'Prothyon16_VO', cue = '1intro1', faction = 'UEF'
+    },
 }
 
 -- Intro Sequence 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 intro2 = {
-  {text = '[Gyle]: There are tech centers positioned around the map - capture them to unlock additional units.', vid = 'Pro_16_intro2.sfd', bank = 'Prothyon16_VO', cue = '2intro2', faction = 'UEF'},
+    {
+        text = '[Gyle]: There are tech centers positioned around the map - capture them to unlock additional units.',
+        vid = 'Pro_16_intro2.sfd', bank = 'Prothyon16_VO', cue = '2intro2', faction = 'UEF'
+    },
 }
 
 -- Intro Sequence 3 / Actor: Gyle / Update 22/05/2015 / VO Ready
 intro3 = {
-  {text = '[Gyle]: Your next objective will then be to secure the beach by destroying this base.  ', vid = 'Pro_16_intro3.sfd', bank = 'Prothyon16_VO', cue = '3intro3', faction = 'UEF'},
+    {
+        text = '[Gyle]: Your next objective will then be to secure the beach by destroying this base.  ',
+        vid = 'Pro_16_intro3.sfd', bank = 'Prothyon16_VO', cue = '3intro3', faction = 'UEF'
+    },
 }
 
 -- Good luck! / Actor: Gyle / Update 22/05/2015 / VO Ready
 postintro = {
-  {text = '[Gyle]: The training AI has been activated – Good Luck Commander! ', vid = 'Pro_16_postintro.sfd', bank = 'Prothyon16_VO', cue = '4postintro', faction = 'UEF'},
+    {
+        text = '[Gyle]: The training AI has been activated – Good Luck Commander! ',
+        vid = 'Pro_16_postintro.sfd', bank = 'Prothyon16_VO', cue = '4postintro', faction = 'UEF'
+    },
 }
 
 -- First Base Killed / Actor: Gyle / Update 22/05/2015 / VO Ready
 base1killed = {
-  {text = '[Gyle]: The outpost has been destroyed, secure the area and push forward. HQ, Out', vid = 'Pro_16_base1killed.sfd', bank = 'Prothyon16_VO', cue = '5base1killed', faction = 'UEF'},
+    {
+        text = '[Gyle]: The outpost has been destroyed, secure the area and push forward. HQ, Out',
+        vid = 'Pro_16_base1killed.sfd', bank = 'Prothyon16_VO', cue = '5base1killed', faction = 'UEF'
+    },
 }
 
 -- Both Bases Killed / Actor: Gyle / Update 22/05/2015 / VO TODO
 base2killed = {
-  {text = '[Gyle]: First part of the exercise complete. HQ, Out', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: First part of the exercise complete. HQ, Out',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M1_BothBasesKilled.sfd', bank = 'Prothyon16_VO', cue = 'M1_BothBasesKilled', faction = 'UEF'
+    },
 }
 
 
 
 -- Tech building reminder 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 HQcapremind1 = {
-  {text = '[Gyle]: Commander, you need to capture the tech centre to gain access to additional units. HQ, Out', vid = 'Pro_16_HQcapremind1.sfd', bank = 'Prothyon16_VO', cue = '6HQcapremind1', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander, you need to capture the tech centre to gain access to additional units. HQ, Out',
+        vid = 'Pro_16_HQcapremind1.sfd', bank = 'Prothyon16_VO', cue = '6HQcapremind1', faction = 'UEF'
+    },
 }
 
 -- Tech building reminder 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 HQcapremind2 = {
-  {text = '[Gyle]: A tech centre is still in enemy hands - you need to capture it to gain an advantage in battle. HQ, Out', vid = 'Pro_16_HQcapremind2.sfd', bank = 'Prothyon16_VO', cue = '7HQcapremind2', faction = 'UEF'},
+    {
+        text = '[Gyle]: A tech centre is still in enemy hands - you need to capture it to gain an advantage in battle. HQ, Out',
+        vid = 'Pro_16_HQcapremind2.sfd', bank = 'Prothyon16_VO', cue = '7HQcapremind2', faction = 'UEF'
+    },
 }
 
 -- Tech building reminder 3 / Actor: Gyle / Update 22/05/2015 / VO Ready
 HQcapremind3 = {
-  {text = '[Gyle]: You can only gain access to additional units if you capture a tech centre. Do so as soon as possible. HQ, Out', vid = 'Pro_16_HQcapremind3.sfd', bank = 'Prothyon16_VO', cue = '8HQcapremind3', faction = 'UEF'},
+    {
+        text = '[Gyle]: You can only gain access to additional units if you capture a tech centre. Do so as soon as possible. HQ, Out',
+        vid = 'Pro_16_HQcapremind3.sfd', bank = 'Prothyon16_VO', cue = '8HQcapremind3', faction = 'UEF'
+    },
 }
 
 -- Tech building reminder 4 / Actor: Gyle / Update 30/07/2015 / VO not ready, I think. I corrected this.
 HQcapremind4 = {
-  {text = '[Gyle]: Commander there is still an uncaptured technology centre - you need it to build advanced units. HQ, Out', vid = 'Pro_16_HQcapremind4.sfd', bank = 'Prothyon16_VO', cue = '9HQcapremind4', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander there is still an uncaptured technology centre - you need it to build advanced units. HQ, Out',
+        vid = 'Pro_16_HQcapremind4.sfd', bank = 'Prothyon16_VO', cue = '9HQcapremind4', faction = 'UEF'
+    },
 }
 
 
 
 -- First objective reminder 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 base1remind1 = {
-  {text = '[Gyle]: The outpost is obstructing your progress. Destroy it immediately. HQ Out', vid = 'Pro_16_base1remind1.sfd', bank = 'Prothyon16_VO', cue = '10base1remind1', faction = 'UEF'},
+    {
+        text = '[Gyle]: The outpost is obstructing your progress. Destroy it immediately. HQ Out',
+        vid = 'Pro_16_base1remind1.sfd', bank = 'Prothyon16_VO', cue = '10base1remind1', faction = 'UEF'
+    },
 }
 
 -- First objective reminder 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 base1remind2 = {
-  {text = '[Gyle]: The clock\'s ticking commander, destroy that base. HQ Out', vid = 'Pro_16_base1remind2.sfd', bank = 'Prothyon16_VO', cue = '11base1remind2', faction = 'UEF'},
+    {
+        text = '[Gyle]: The clock\'s ticking commander, destroy that base. HQ Out',
+        vid = 'Pro_16_base1remind2.sfd', bank = 'Prothyon16_VO', cue = '11base1remind2', faction = 'UEF'
+    },
 }
 
 -- Second objective reminder 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 base2remind1 = {
-  {text = '[Gyle]: The base is still operational - you need to destroy it to secure the beach. HQ Out', vid = 'Pro_16_base1remind2.sfd', bank = 'Prothyon16_VO', cue = '12base2remind1', faction = 'UEF'},
+    {
+        text = '[Gyle]: The base is still operational - you need to destroy it to secure the beach. HQ Out',
+        vid = 'Pro_16_base1remind2.sfd', bank = 'Prothyon16_VO', cue = '12base2remind1', faction = 'UEF'
+    },
 }
 
 
@@ -162,46 +213,70 @@ base2remind1 = {
 
 -- Units moving notification / Actor: Gyle / Update 22/05/2015 / VO Ready
 unitmove = {
-  {text = '[Gyle]: There will be units moving through your area participating in other training exercises, please ignore them. HQ Out', vid = 'Pro_16_unitmove.sfd', bank = 'Prothyon16_VO', cue = '13unitmove', faction = 'UEF'},
+    {
+        text = '[Gyle]: There will be units moving through your area participating in other training exercises, please ignore them. HQ Out',
+        vid = 'Pro_16_unitmove.sfd', bank = 'Prothyon16_VO', cue = '13unitmove', faction = 'UEF'
+    },
 }
 
 -- Third Objective intro 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 southbase1 = {
-  {text = '[Gyle]: Your next task is to neutralise the base in the south, the training AI has been authorised to use tech 2 land and air units, so expect heavy resistance.  ', vid = 'Pro_16_southbase1.sfd', bank = 'Prothyon16_VO', cue = '14southbase1', faction = 'UEF'},
+    {
+        text = '[Gyle]: Your next task is to neutralise the base in the south, the training AI has been authorised to use tech 2 land and air units, so expect heavy resistance.  ',
+        vid = 'Pro_16_southbase1.sfd', bank = 'Prothyon16_VO', cue = '14southbase1', faction = 'UEF'
+    },
 }
 
 -- Third Objective intro 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 southbase2 = {
-  {text = '[Gyle]: Attack immediately and secure the whole island in preparation for phase 3 of the exercise. HQ, Out', vid = 'Pro_16_southbase2.sfd', bank = 'Prothyon16_VO', cue = '15southbase2', faction = 'UEF'},
+    {
+        text = '[Gyle]: Attack immediately and secure the whole island in preparation for phase 3 of the exercise. HQ, Out',
+        vid = 'Pro_16_southbase2.sfd', bank = 'Prothyon16_VO', cue = '15southbase2', faction = 'UEF'
+    },
 }
 
 
 
 -- Third objective reminder 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 southbaseremind1 = {
-  {text = '[Gyle]: The complex in the south is still operational - send a force to deal with it. HQ, Out', vid = 'Pro_16_southbaseremind1.sfd', bank = 'Prothyon16_VO', cue = '16southbaseremind1', faction = 'UEF'},
+    {
+        text = '[Gyle]: The complex in the south is still operational - send a force to deal with it. HQ, Out',
+        vid = 'Pro_16_southbaseremind1.sfd', bank = 'Prothyon16_VO', cue = '16southbaseremind1', faction = 'UEF'
+    },
 }
 
 -- Third objective reminder 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 southbaseremind2 = {
-  {text = '[Gyle]: The island is still not secure - you need to ensure there are no enemy structures remaining. HQ, Out', vid = 'Pro_16_southbaseremind2.sfd', bank = 'Prothyon16_VO', cue = '17southbaseremind2', faction = 'UEF'},
+    {
+        text = '[Gyle]: The island is still not secure - you need to ensure there are no enemy structures remaining. HQ, Out',
+        vid = 'Pro_16_southbaseremind2.sfd', bank = 'Prothyon16_VO', cue = '17southbaseremind2', faction = 'UEF'
+    },
 }
 
 
 
 -- Air tech objective / Actor: Gyle / Update 22/05/2015 / VO Ready
 airhqtechcentre = {
-  {text = '[Gyle]: Another tech centre is located behind the south base. Capture it to gain access to tech 2 air units. HQ Out', vid = 'Pro_16_airhqtechcentre.sfd', bank = 'Prothyon16_VO', cue = '18airhqtechcentre', faction = 'UEF'},
+    {
+        text = '[Gyle]: Another tech centre is located behind the south base. Capture it to gain access to tech 2 air units. HQ Out',
+        vid = 'Pro_16_airhqtechcentre.sfd', bank = 'Prothyon16_VO', cue = '18airhqtechcentre', faction = 'UEF'
+    },
 }
 
 -- Titan patroll objective / Actor: Gyle / Update 22/05/2015 / VO Ready
 titankill = {
-  {text = '[Gyle]: There are a number of titan units defending this area - engage them at you discretion. HQ Out', vid = 'Pro_16_titankill.sfd', bank = 'Prothyon16_VO', cue = '19titankill', faction = 'UEF'},
+    {
+        text = '[Gyle]: There are a number of titan units defending this area - engage them at you discretion. HQ Out',
+        vid = 'Pro_16_titankill.sfd', bank = 'Prothyon16_VO', cue = '19titankill', faction = 'UEF'
+    },
 }
 
 -- Titan patroll objective complete / Actor: Gyle / Update 22/05/2015 / VO Ready
 titankilled = {
-  {text = '[Gyle]: The titan squad has been eliminated - well done commander. ', vid = 'Pro_16_titankilled.sfd', bank = 'Prothyon16_VO', cue = '20titankilled', faction = 'UEF'},
+    {
+        text = '[Gyle]: The titan squad has been eliminated - well done commander. ',
+        vid = 'Pro_16_titankilled.sfd', bank = 'Prothyon16_VO', cue = '20titankilled', faction = 'UEF'
+    },
 }
 
 
@@ -215,36 +290,54 @@ titankilled = {
 
 -- Third objective intro 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 airbase1 = {
-  {text = '[Gyle]: The island is now secure.', vid = 'Pro_16_airbase1.sfd', bank = 'Prothyon16_VO', cue = '21airbase1', faction = 'UEF'},
+    {
+        text = '[Gyle]: The island is now secure.',
+        vid = 'Pro_16_airbase1.sfd', bank = 'Prothyon16_VO', cue = '21airbase1', faction = 'UEF'
+    },
 }
 
 -- Third objective intro 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 airbase2 = {
-  {text = '[Gyle]: Your next objective is to land on the neighbouring island and eliminate this base. The AI has been instructed to use land, air and naval units so watch your step. ', vid = 'Pro_16_airbase2.sfd', bank = 'Prothyon16_VO', cue = '22airbase2', faction = 'UEF'},
+    {
+        text = '[Gyle]: Your next objective is to land on the neighbouring island and eliminate this base. The AI has been instructed to use land, air and naval units so watch your step. ',
+        vid = 'Pro_16_airbase2.sfd', bank = 'Prothyon16_VO', cue = '22airbase2', faction = 'UEF'
+    },
 }
 
 -- Third objective intro 3 / Actor: Gyle / Update 22/05/2015 / VO Ready
 postintro3 = {
-  {text = '[Gyle]: Repel the attacking forces and launch a counter-offensive. HQ, out', vid = 'Pro_16_postintro3.sfd', bank = 'Prothyon16_VO', cue = '23postintro', faction = 'UEF'},
+    {
+        text = '[Gyle]: Repel the attacking forces and launch a counter-offensive. HQ, out',
+        vid = 'Pro_16_postintro3.sfd', bank = 'Prothyon16_VO', cue = '23postintro', faction = 'UEF'
+    },
 }
 
 
 
 -- Third objective reminder 1 / Actor: Gyle / Update 22/05/2015 / VO Ready
 airbaseremind1 = {
-  {text = '[Gyle]: The second island is still in the hands of the enemy. Send units to attack it. HQ, Out', vid = 'Pro_16_airbaseremind1.sfd', bank = 'Prothyon16_VO', cue = '24airbaseremind1', faction = 'UEF'},
+    {
+        text = '[Gyle]: The second island is still in the hands of the enemy. Send units to attack it. HQ, Out',
+        vid = 'Pro_16_airbaseremind1.sfd', bank = 'Prothyon16_VO', cue = '24airbaseremind1', faction = 'UEF'
+    },
 }
 
 -- Third objective reminder 2 / Actor: Gyle / Update 22/05/2015 / VO Ready
 airbaseremind2 = {
-  {text = '[Gyle]: The Air base is still operational, get it done commander. HQ Out', vid = 'Pro_16_airbaseremind2.sfd', bank = 'Prothyon16_VO', cue = '25airbaseremind2', faction = 'UEF'},
+    {
+        text = '[Gyle]: The Air base is still operational, get it done commander. HQ Out',
+        vid = 'Pro_16_airbaseremind2.sfd', bank = 'Prothyon16_VO', cue = '25airbaseremind2', faction = 'UEF'
+    },
 }
 
 
 
 -- Most important part / Actor: Gyle / Update 22/05/2015 / VO Ready
 epicEprop = {
-  {text = '[Gyle]: Thank you for playing this scenario. This experience has been brought to you courtesy of empire clan. Mission made by speed2, some other useless things were made by Exotic_Retard, and I was responsible for your lovely voiceovers. This is Gyle, Signing out.', vid = 'Pro_16_epicEprop.sfd', bank = 'Prothyon16_VO', cue = '27epicEprop', faction = 'UEF'},
+    {
+        text = '[Gyle]: Thank you for playing this scenario. This experience has been brought to you courtesy of empire clan. Mission made by speed2, some other useless things were made by Exotic_Retard, and I was responsible for your lovely voiceovers. This is Gyle, Signing out.',
+        vid = 'Pro_16_epicEprop.sfd', bank = 'Prothyon16_VO', cue = '27epicEprop', faction = 'UEF'
+    },
 }
 
 
@@ -256,13 +349,18 @@ epicEprop = {
 
 -- Seraphim arrival intro 1 / Actor: Gyle / Update 28/09/2015 / VO not ready
 M4intro1 = {
-  {text = '[Gyle]: Excellent work Commander. Clean up the rest of the base, and then \- ', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Excellent work Commander. Clean up the rest of the base, and then \- ',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M4_Intro_1.sfd', bank = 'Prothyon16_VO', cue = 'M4_Intro_1', faction = 'UEF'
+    },
 } 
 
 -- Seraphim arrival intro 2 / Actor: Gyle / Update 28/09/2015 / VO not ready
 M4intro2 = {
-#(reopen trans)
-  {text = '[Gyle]: Commander, halt all attacks on the AI. Regroup your forces and prepare to defend your positions. Our radars are picking up unidenti- Scratch that. You have hostiles inbound, Seraphim signatures.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander, halt all attacks on the AI. Regroup your forces and prepare to defend your positions. Our radars are picking up unidenti- Scratch that. You have hostiles inbound, Seraphim signatures.',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M4_Intro_2.sfd', bank = 'Prothyon16_VO', cue = 'M4_Intro_2', faction = 'UEF'
+    },
 }
 
 ---------------------------------------------
@@ -273,203 +371,316 @@ M4intro2 = {
 
 -- Objective 5 Intro 1 / Actor: Gyle, Morax / Update 28/09/2015 / VO TODO
 obj5intro1 = {
-  {text = '[Gyle]: The Seraphim incursion is too large to be contained! Your job is to ensure that our field commander, Morax makes it off-planet in one piece. Patching you through to him.... now.', vid = '', bank = '', cue = '', faction = 'UEF'},
-  {text = '[Morax]: My garrison is in the middle of a warzone and the Seraphim are after me! I will hold off the enemy attacks as long as I can, but I will need assistance!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The Seraphim incursion is too large to be contained! Your job is to ensure that our field commander, Morax makes it off-planet in one piece. Patching you through to him.... now.',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5_Intro_1_1.sfd', bank = 'Prothyon16_VO', cue = 'M5_Intro_1_1', faction = 'UEF'
+    },
+    {
+        text = '[Morax]: My garrison is in the middle of a warzone and the Seraphim are after me! I will hold off the enemy attacks as long as I can, but I will need assistance!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Intro_1_2.sfd', bank = 'Prothyon16_VO', cue = 'M5_Intro_1_2', faction = 'UEF'
+    },
 }
 
 -- Objective 5 Intro 3 / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 obj5intro2 = {
-  {text = '[Chief Johnson]: Commander, I have issued an evacuation order to all non-combat personnel in the area. But we are cut off by enemy forces! Clear those out of our way and escort everyone to the quantum gateway for extraction as soon as you can.', vid = '', bank = 'Prothyon16_VO', cue = 'obj5intro2', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Commander, I have issued an evacuation order to all non-combat personnel in the area. But we are cut off by enemy forces! Clear those out of our way and escort everyone to the quantum gateway for extraction as soon as you can.',
+        vid = 'Graham.sfd', vidx = 'M5_Intro_2.sfd', bank = 'Prothyon16_VO', cue = 'M5_Intro_2', faction = 'UEF'
+    },
 }
 
 -- Objective 5 Post Intro / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 obj5postintro = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04346.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04346', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04346.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04346', faction = 'Seraphim'
+    },
 }
 
 -- Protect sACU / Actor: Gyle / Update 28/09/2015 / VO TODO
 ProtectsACU = {
-  {text = '[Gyle]: Commander, you need to defend Morax from the seraphim attacks!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander, you need to defend Morax from the seraphim attacks!',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5Protect_Morax.sfd', bank = 'Prothyon16_VO', cue = 'M5Protect_Morax', faction = 'UEF'
+    },
 }
 
 -- Defeat Seraphim ACU / Actor: Gyle / Update 28/09/2015 / VO TODO
 M5KillSeraACU = {
-  {text = '[Gyle]: A hostile ACU signature has been detected, destroy that commander as soon as possible!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: A hostile ACU signature has been detected, destroy that commander as soon as possible!',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5KillSeraACU.sfd', bank = 'Prothyon16_VO', cue = 'M5KillSeraACU', faction = 'UEF'
+    },
 }
 
 
 
 -- Main Obj Reminder 1 / Actor: Gyle / Update 28/09/2015 / VO TODO
 M5MainReminder1 = {
-  {text = '[Gyle]: The seraphim still have a foothold in the area! Rectify that immediately!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The seraphim still have a foothold in the area! Rectify that immediately!',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5MainReminder1.sfd', bank = 'Prothyon16_VO', cue = 'M5MainReminder1', faction = 'UEF'
+    },
 }
 
 -- Main Obj Reminder 2 / Actor: Gyle / Update 28/09/2015 / VO TODO
 M5MainReminder2 = {
-  {text = '[Gyle]: There are still seraphim forces in the vicinity commander,', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: There are still seraphim forces in the vicinity commander,',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5MainReminder2.sfd', bank = 'Prothyon16_VO', cue = 'M5MainReminder2', faction = 'UEF'
+    },
 }
 
 
 
 -- Sera ACU Defeated / Actor: Gyle / Update 28/09/2015 / VO TODO
 M5SeraDefeated = {
-  {text = '[Gyle]: The enemy ACU is showing up as destroyed! Excellent work commander!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The enemy ACU is showing up as destroyed! Excellent work commander!',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5SeraDefeated.sfd', bank = 'Prothyon16_VO', cue = 'M5SeraDefeated', faction = 'UEF'
+    },
 }
 
 -- Sera ACU Defeated Base remains / Actor: Gyle / Update 28/09/2015 / VO TODO
 M5SeraBaseRemains = {
-  {text = '[Gyle]: The enemy base remains and is still operational. Neutralise everything in the area.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The enemy base remains and is still operational. Neutralise everything in the area.',
+        vid = 'AllyCom.sfd', vidx = 'Pro_16_M5SeraBaseRemains.sfd', bank = 'Prothyon16_VO', cue = 'M5SeraBaseRemains', faction = 'UEF'
+    },
 }
 
 
 
 -- sACU on Losing Defences / Actor: Morax / Update 28/09/2015 / VO TODO
 sACULoseDef = {
-  {text = '[Morax]: My defenses are crumbling! The Seraphim are going to destroy my base!', vid = '', bank = 'Prothyon16_VO', cue = 'defcrumb', faction = 'UEF'},
+    {
+        text = '[Morax]: Commander, my defenses are crumbling! The Seraphim are going to destroy my base if we don\'t act now!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_LoseDef.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_LoseDef', faction = 'UEF'
+    },
 }
 
 -- sACU on Losing Factory / Actor: Morax / Update 28/09/2015 / VO TODO
 sACULoseFac = {
-  {text = '[Morax]: One of my factories has been destroyed!', vid = '', bank = 'Prothyon16_VO', cue = 'facdown', faction = 'UEF'},
+    {
+        text = '[Morax]: One of my factories has been destroyed! It\'s gonna be hard for me to keep up with the Seraphim forces, let\'s get moving!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_FactoryLost.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_FactoryLost', faction = 'UEF'
+    },
 }
 
 -- sACU on Taking Damage / Actor: Morax / Update 28/09/2015 / VO TODO
 sACUTakesDmg = {
-  {text = '[Morax]: I\'m getting incoming fire!', vid = '', bank = 'Prothyon16_VO', cue = 'acudamage1', faction = 'UEF'},
+    {
+        text = '[Morax]: Incoming fire commander, I\'m taking damage here!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_Damage.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_Damage', faction = 'UEF'
+    },
 }
 
 -- sACU Damaged 25% / Actor: Morax / Update 28/09/2015 / VO TODO
 sACUDamaged25 = {
-  {text = '[Morax]: Commander, I have received some light fire, but everything is still fully operational.', vid = '', bank = 'Prothyon16_VO', cue = 'lightfireok', faction = 'UEF'},
+    {
+        text = '[Morax]: Light fire\'s been recieved, but everything\'s operational commander.',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_25Damage.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_25Damage', faction = 'UEF'
+    },
 }
 
 -- sACU Damaged 50% / Actor: Morax / Update 28/09/2015 / VO TODO
 sACUDamaged50 = {
-  {text = '[Morax]: My armour has suffered minor damage, but I\'m fine.', vid = '', bank = 'Prothyon16_VO', cue = 'minordamage', faction = 'UEF'},
+    {
+        text = '[Morax]: My armour has suffered some minor damage, but I\'m fine for now.',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_50Damage.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_50Damage', faction = 'UEF'
+    },
 }
 
 -- sACU Damaged 75% / Actor: Morax / Update 28/09/2015 / VO TODO
 sACUDamaged75 = {
-  {text = '[Morax]: I have received heavy damage! I need support!', vid = '', bank = 'Prothyon16_VO', cue = 'acu75damage', faction = 'UEF'},
+    {
+        text = '[Morax]: Heavy damage sustained commander! Im down by 75% and taking!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_75Damage.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_75Damage', faction = 'UEF'
+    },
 }
 
 -- sACU Damaged 90% / Actor: Morax / Update 28/09/2015 / VO TODO
 sACUDamaged90 = {
-  {text = '[Morax]: Systems report critical damage! I can\'t hold out much longer!', vid = '', bank = 'Prothyon16_VO', cue = 'acucritial', faction = 'UEF'},
+    {
+        text = '[Morax]: Systems critical commander! I\'m not gonna be able to take much more of this!',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_CriticalDamage.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_CriticalDamage', faction = 'UEF'
+    },
 }
 
 
 
 -- sACU Rescued1 / Actor: Gyle / Update 30/08/2015 / VO TODO
 sACURescued1 = {
-  {text = '[Gyle]: The Seraphim base has been destroyed and the path to Morax is clear. We\'re extracting him immediately.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The Seraphim base has been destroyed and the path to Morax is clear. We\'re extracting him immediately.',
+        vid = 'AllyCom.sfd', vidx = 'M5_Morax_Rescued_1.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_Rescued_1', faction = 'UEF'
+    },
 }
 
 -- sACU Rescued2 / Actor: Morax / Update 30/08/2015 / VO TODO
 sACURescued2 = {
-  {text = '[Morax]: Thanks for helping me out commander, I wouldn\'t have made it on my own.', vid = '', bank = 'Prothyon16_VO', cue = 'thanks', faction = 'UEF'},
+    {
+        text = '[Morax]: Thanks for helping me out commander, I wouldn\'t have made it on my own.',
+        vid = 'Fletcher.sfd', vidx = 'M5_Morax_Rescued_2.sfd', bank = 'Prothyon16_VO', cue = 'M5_Morax_Rescued_2', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj Destroy Seraphim Island Bases / Actor: Gyle / Update 28/09/2015 / VO TODO
 IslandBasesKill = {
-  {text = '[Gyle]: A heavy seraphim naval presence has been detected on the nearby islands. You are to destroy them without delay.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: A heavy seraphim naval presence has been detected on the nearby islands. You are to destroy them without delay.',
+        vid = 'AllyCom.sfd', vidx = 'M5_IslandBasesKill.sfd', bank = 'Prothyon16_VO', cue = 'M5_IslandBasesKill', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj First Island Base Destroyed / Actor: Gyle / Update 28/09/2015 / VO TODO
 IslandBase1Killed = {
-  {text = '[Gyle]: The first island base has been destroyed. Proceed onto the next base.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The first island base has been destroyed. Proceed onto the next base.',
+        vid = 'AllyCom.sfd', vidx = 'M5_IslandBase1Killed_1.sfd', bank = 'Prothyon16_VO', cue = 'M5_IslandBase1Killed_1', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj Second Island Base Destroyed / Actor: Gyle / Update 28/09/2015 / VO TODO
 IslandBase2Killed = {
-  {text = '[Gyle]: All key structures have been eliminated, move into position and deal with the last base.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: All key structures have been eliminated, move into position and deal with the last base.',
+        vid = 'AllyCom.sfd', vidx = 'M5_IslandBase1Killed_2.sfd', bank = 'Prothyon16_VO', cue = 'M5_IslandBase1Killed_2', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj All Island Base Destroyed / Actor: Gyle, sACU / Update 28/09/2015 / VO TODO
 IslandBaseAllKilled = {
-  {text = '[Gyle]: All seraphim island bases are registering as inactive. Clean up any remaining forces and focus on your other objectives. Good work Commander!', vid = '', bank = '', cue = '', faction = 'UEF'},
-  --{text = '[]:', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: All seraphim island bases are registering as inactive. Clean up any remaining forces and focus on your other objectives. Good work Commander!',
+        vid = 'AllyCom.sfd', vidx = 'M5_IslandBaseAllKilled.sfd', bank = 'Prothyon16_VO', cue = 'M5_IslandBaseAllKilled', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj All Island Base Destroyed, no Civs left / Actor: Gyle / Update 28/09/2015 / VO TODO
 IslandBaseAllKilledNoCiv = {
-  {text = '[Gyle]: We have defeated the seraphim on this island, but at the cost of many lives.', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: We have defeated the seraphim on this island, but at the cost of many lives.',
+        vid = 'AllyCom.sfd', vidx = 'M5_IslandBaseAllKilledNoCiv.sfd', bank = 'Prothyon16_VO', cue = 'M5_IslandBaseAllKilledNoCiv', faction = 'UEF'
+    },
 }
 
 
 
 -- Secondary Obj Protect Civs / Actor: Chief Johnson  / 06/10/2015 / VO Ready
 M5ProtectCivs = {
-  {text = '[Chief Johnson]: There is a civilian installation on this island, you need to protect it from the seraphim attacks!', vid = '', bank = 'Prothyon16_VO', cue = 'M5ProtectCivs', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: There is a civilian installation on this island, you need to protect it from the seraphim attacks!',
+        vid = 'Graham.sfd', vidx = 'M5ProtectCivs.sfd', bank = 'Prothyon16_VO', cue = 'M5ProtectCivs', faction = 'UEF'
+    },
 }
 
 -- Secondary Obj Protect Civs Failed / Actor: Chief Johnson  / 06/10/2015 / VO Ready
 M5CivsDied = {
-  {text = '[Chief Johnson]: The Seraphim have wiped out the civilian installation on the island, there is nothing left.', vid = '', bank = 'Prothyon16_VO', cue = 'M5CivsDied', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: The Seraphim have wiped out the civilian installation on the island, there is nothing left.',
+        vid = 'Graham.sfd', vidx = 'M5CivsDied.sfd', bank = 'Prothyon16_VO', cue = 'M5CivsDied', faction = 'UEF'
+    },
 }
 
 -- 4 buildings above min / Actor: Chief Johnson  / 06/10/2015 / VO Ready
 LosingCivs1 = {
-  {text = '[Chief Johnson]: Only a few critical buildings remain, they must be protected!', vid = '', bank = 'Prothyon16_VO', cue = 'LosingCivs1', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Only a few critical buildings remain, they must be protected!',
+        vid = 'Graham.sfd', vidx = 'M5LosingCivs1.sfd', bank = 'Prothyon16_VO', cue = 'M5LosingCivs1', faction = 'UEF'
+    },
 }
 
 -- 1 buildings above min / Actor:  Chief Johnson / Update 06/10/2015 / VO Ready
 LosingCivs2 = {
-  {text = '[Chief Johnson]: We cannot afford to lose anymore civilian structures commander!', vid = '', bank = 'Prothyon16_VO', cue = 'LosingCivs2', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: We cannot afford to lose anymore civilian structures commander!',
+        vid = 'Graham.sfd', vidx = 'M5LosingCivs2.sfd', bank = 'Prothyon16_VO', cue = 'M5LosingCivs2', faction = 'UEF'
+    },
 }
 
 
 
 -- Secondary obj 3 Evacuate Civs / Actor: Chief Johnson / 06/10/2015 / VO Ready
 M5TrucksReady = {
-  {text = '[Chief Johnson]: Commander, there are a number of civilian trucks in need of evacuation. You need to get them to the quantum gate as soon as possible.', vid = '', bank = 'Prothyon16_VO', cue = 'M5TrucksReady', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Commander, there are a number of civilian trucks in need of evacuation. You need to get them to the quantum gate as soon as possible.',
+        vid = 'Graham.sfd', vidx = 'M5TrucksReady.sfd', bank = 'Prothyon16_VO', cue = 'M5TrucksReady', faction = 'UEF'
+    },
 }
 
 -- Trucks taking damage 1 / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckDamaged1 = {
-  {text = '[Chief Johnson]: The civilian trucks are taking damage! Protect the civilians!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckDamaged1', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: The civilian trucks are taking damage! Protect the civilians!',
+        vid = 'Graham.sfd', vidx = 'M5TruckDamaged1.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckDamaged1', faction = 'UEF'
+    },
 }
 
 -- Trucks taking damage 2 / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckDamaged2 = {
-  {text = '[Chief Johnson]: The civilians are under attack, you need to get them out of here safely!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckDamaged2', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: The civilians are under attack, you need to get them out of here safely!',
+        vid = 'Graham.sfd', vidx = 'M5TruckDamaged2.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckDamaged2', faction = 'UEF'
+    },
 }
 
 
 -- 1 truck destroyed / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckDestroyed1 = {
-  {text = '[Chief Johnson]: We\'ve lost contact with a civilian truck! The rest need to be evacuated immediately!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed1', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: We\'ve lost contact with a civilian truck! The rest need to be evacuated immediately!',
+        vid = 'Graham.sfd', vidx = 'M5TruckDestroyed1.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed1', faction = 'UEF'
+    },
 }
 
 -- 2 trucks destroyed / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckDestroyed2 = {
-  {text = '[Chief Johnson]: Another truck has been destroyed! We need to rescue the civilians!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed2', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Another truck has been destroyed! We need to rescue the civilians!',
+        vid = 'Graham.sfd', vidx = 'M5TruckDestroyed2.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed2', faction = 'UEF'
+    },
 }
 
 -- 3 trucks destroyed / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckDestroyed3 = {
-  {text = '[Chief Johnson]: A third truck has been destroyed! Send aid at once!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed3', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: A third truck has been destroyed! Send aid at once!',
+        vid = 'Graham.sfd', vidx = 'M5TruckDestroyed3.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckDestroyed3', faction = 'UEF'
+    },
 }
 
 
 -- All trucks destroyed, objective failed / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5AllTrucksDestroyed = {
-  {text = '[Chief Johnson]: Commander, there are no more trucks remaining, all of the civilians have been killed.', vid = '', bank = 'Prothyon16_VO', cue = 'M5AllTrucksDestroyed', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Commander, there are no more trucks remaining, all of the civilians have been killed.',
+        vid = 'Graham.sfd', vidx = 'M5AllTrucksDestroyed.sfd', bank = 'Prothyon16_VO', cue = 'M5AllTrucksDestroyed', faction = 'UEF'
+    },
 }
 
 -- objective complete / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5AllTruckRescued = {
-  {text = '[Chief Johnson]: All civilians have been evacuated, good work commander!', vid = '', bank = 'Prothyon16_VO', cue = 'M5AllTruckRescued', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: All civilians have been evacuated, good work commander!',
+        vid = 'Graham.sfd', vidx = 'M5AllTruckRescued.sfd', bank = 'Prothyon16_VO', cue = 'M5AllTruckRescued', faction = 'UEF'
+    },
 }
 
 -- 1 truck rescued / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckRescued1 = {
-  {text = '[Chief Johnson]: The first convoy has successfully left the operation area.', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckRescued1', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: The first convoy has successfully left the operation area.',
+        vid = 'Graham.sfd', vidx = 'M5TruckRescued1.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckRescued1', faction = 'UEF'
+    },
 }
 
 -- 2 trucks rescued / Actor: Chief Johnson / Update 06/10/2015 / VO Ready
 M5TruckRescued2 = {
-  {text = '[Chief Johnson]: Another civilian truck has been successfully evacuated!', vid = '', bank = 'Prothyon16_VO', cue = 'M5TruckRescued2', faction = 'UEF'},
+    {
+        text = '[Chief Johnson]: Another civilian truck has been successfully evacuated!',
+        vid = 'Graham.sfd', vidx = 'M5TruckRescued2.sfd', bank = 'Prothyon16_VO', cue = 'M5TruckRescued2', faction = 'UEF'
+    },
 }
 
 
@@ -482,27 +693,42 @@ M5TruckRescued2 = {
 
 -- Second Sera ACU gates in / Actor: Gyle / Update 28/09/2015 / VO TODO
 M6SecondSeraACU = {
-  {text = '[Gyle]: Commander, we\'re detecting a second ACU signature in the area, an enemy commander has just gated in!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Commander, we\'re detecting a second ACU signature in the area, an enemy commander has just gated in!',
+        vid = 'AllyCom.sfd', vidx = 'M6SecondSeraACU.sfd', bank = 'Prothyon16_VO', cue = 'M6SecondSeraACU', faction = 'UEF'
+    },
 }
 
 -- invasion announcement / Actor: Gyle / Update 28/09/2015 / VO TODO
 M6InvCount1 = {
-  {text = '[Gyle]: The Seraphim are planning a massive attack, our intel tells us that you have no more than 30 minutes before it\'s launched!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The Seraphim are planning a massive attack, our intel tells us that you have no more than 30 minutes before it\'s launched!',
+        vid = 'AllyCom.sfd', vidx = 'M6InvCount1.sfd', bank = 'Prothyon16_VO', cue = 'M6InvCount1', faction = 'UEF'
+    },
 }
 
 -- second invasion countdown / Actor: Gyle / Update 28/09/2015 / VO TODO
 M6InvCount2 = {
-  {text = '[Gyle]: The activity of the enemy bases suggests you have no more than 15 minutes before all hell breaks lose! Get a move on!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The activity of the enemy bases suggests you have no more than 15 minutes before all hell breaks lose! Get a move on!',
+        vid = 'AllyCom.sfd', vidx = 'M6InvCount2.sfd', bank = 'Prothyon16_VO', cue = 'M6InvCount2', faction = 'UEF'
+    },
 }
 
 -- third invasion countdown / Actor: Gyle / Update 28/09/2015 / VO TODO
 M6InvCount3 = {
-  {text = '[Gyle]: The enemy attack is imminent! You have less than 5 minutes left!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: The enemy attack is imminent! You have less than 5 minutes left!',
+        vid = 'AllyCom.sfd', vidx = 'M6InvCount3.sfd', bank = 'Prothyon16_VO', cue = 'M6InvCount3', faction = 'UEF'
+    },
 }
 
 -- Massive sera attacks / Actor: Gyle / Update 28/09/2015 / VO TODO
 M6SeraAttack = {
-  {text = '[Gyle]: Hostile Signatures are off the charts! The full scale invasion has just been launched, you need to get off planet, now!', vid = '', bank = '', cue = '', faction = 'UEF'},
+    {
+        text = '[Gyle]: Hostile Signatures are off the charts! The full scale invasion has just been launched, you need to get off planet, now!',
+        vid = 'AllyCom.sfd', vidx = 'M6SeraAttack.sfd', bank = 'Prothyon16_VO', cue = 'M6SeraAttack', faction = 'UEF'
+    },
 }
 
 
@@ -515,85 +741,136 @@ M6SeraAttack = {
 
 -- Taunt01 On losing a large attack force / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT1 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04320.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04320', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04320.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04320', faction = 'Seraphim'
+    },
 }
 
 -- Taunt02 On losing a large attack force / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT2 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04322.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04322', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04322.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04322', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On losing defensive structures / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT3 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04324.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04324', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04324.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04324', faction = 'Seraphim'
+    },
 }
 
 -- Taunt02 On losing defensive structures / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT4 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04325.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04325', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04325.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04325', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On losing resource structures / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT5 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04328.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04328', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04328.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04328', faction = 'Seraphim'
+    },
 }
 
 -- Taunt02 On losing resource structures / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT12 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04330.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04330', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04330.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04330', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On attacking / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT14 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04332.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04332', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04332.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04332', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On destroying defensive structure / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT16 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04334.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04334', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04334.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04334', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On destroying resource structure / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT18 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04336.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04336', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04336.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04336', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On building an experimental / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT20 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04338.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04338', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04338.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04338', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On damaging player ACU 50% / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT23 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04340.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04340', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04340.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04340', faction = 'Seraphim'
+    },
 }
 
 -- Taunt02 On damaging player ACU 50% / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT24 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04342.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04342', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04342.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04342', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 UEF / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT26 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04344.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04344', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04344.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04344', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 Cybran / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT28 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04346.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04346', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04346.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04346', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 Aeon / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT30 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04348.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04348', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04348.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04348', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 At 50% health / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT32 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04350.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04350', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04350.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04350', faction = 'Seraphim'
+    },
 }
 
 -- Taunt01 On death / Actor: Thel-Uuthow / Update: 06/28/2007 / VO Ready
 TAUNT34 = {
-  {text = '[Zottoo-Zithutin]: [Language Not Recognized]', vid = 'X03_Thel-Uuthow_T01_04352.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04352', faction = 'Seraphim'},
+    {
+        text = '[Zottoo-Zithutin]: [Language Not Recognized]',
+        vid = 'X03_Thel-Uuthow_T01_04352.sfd', bank = 'X03_VO', cue = 'X03_Thel-Uuthow_T01_04352', faction = 'Seraphim'
+    },
 }
